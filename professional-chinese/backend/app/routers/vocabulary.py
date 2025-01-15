@@ -24,7 +24,7 @@ class Vocabulary(VocabularyBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 @router.post("/", response_model=Vocabulary)
 async def create_vocabulary(

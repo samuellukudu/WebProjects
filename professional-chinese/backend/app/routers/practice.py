@@ -1,22 +1,17 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from sqlalchemy import func, case, desc
-from typing import List, Optional
-from datetime import datetime, timedelta
 from pydantic import BaseModel
-from .. import models
+from typing import List
+from datetime import datetime, timedelta
 from ..database import get_db
+from .. import models
 import logging
-from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session
-from sqlalchemy import func, case, desc
-from typing import List, Optional
-from datetime import datetime, timedelta
-from pydantic import BaseModel
-from .. import models
-from ..database import get_db
+from sqlalchemy.sql import func
+from sqlalchemy import desc
 
 router = APIRouter()
+
+logger = logging.getLogger(__name__)
 
 class VocabularyInPractice(BaseModel):
     id: int
@@ -47,37 +42,35 @@ class ProgressUpdate(BaseModel):
     is_correct: bool
 
 def calculate_next_review(proficiency_level: int, is_correct: bool) -> datetime:
-    """Calculate next review time based on proficiency and correctness."""
     base_days = 2 ** proficiency_level if is_correct else 1
     variance = base_days * 0.2
     days = base_days + (variance * (datetime.now().timestamp() % 1 - 0.5))
     return datetime.now() + timedelta(days=max(1, days))
 
 def get_user_level(db: Session) -> int:
-    """Calculate user's current level based on progress."""
     avg_proficiency = db.query(
         func.avg(models.UserProgress.proficiency_level)
     ).scalar() or 0
-
     return min(5, int(avg_proficiency) + 1)
 
-@router.get("/daily-session", response_model=PracticeSession)
+@router.get("/daily-session")
 async def get_daily_session(
-    session_type: str = "standard",
+    session_type: str = Query("standard", description="Type of session: 'standard' or 'flashcard'"),
     db: Session = Depends(get_db)
 ):
-    current_level = get_user_level(db)
-
-    query = db.query(models.Vocabulary)
+    # Validate session type
+    if session_type not in ["standard", "flashcard"]:
+        session_type = "standard"  # Default to standard if invalid type provided
     
+    current_level = get_user_level(db)
+    query = db.query(models.Vocabulary)
+
     if session_type == "flashcard":
         subquery = db.query(models.UserProgress.vocabulary_id)
         new_items = query.filter(~models.Vocabulary.id.in_(subquery))
-
         new_vocab = new_items.filter(
             models.Vocabulary.difficulty_level <= current_level
         ).order_by(func.random()).limit(3).all()
-
         review_vocab = query.join(
             models.UserProgress
         ).filter(
@@ -86,15 +79,21 @@ async def get_daily_session(
         ).order_by(
             models.UserProgress.next_review
         ).limit(2).all()
-
         vocabulary_items = new_vocab + review_vocab
     else:
         vocabulary_items = query.filter(
             models.Vocabulary.difficulty_level <= current_level
         ).order_by(func.random()).limit(5).all()
-    
+
     if not vocabulary_items:
-        raise HTTPException(status_code=404, detail="No vocabulary items found")
+        return {
+            "vocabulary_items": [],
+            "session_id": datetime.now().strftime("%Y%m%d%H%M%S"),
+            "timestamp": datetime.now(),
+            "session_type": session_type,
+            "current_level": current_level,
+            "message": "No more items available for review at this time."
+        }
     
     return {
         "vocabulary_items": vocabulary_items,
@@ -111,7 +110,7 @@ async def update_progress(progress: ProgressUpdate, db: Session = Depends(get_db
     ).first()
 
     next_review = calculate_next_review(progress.proficiency_level, progress.is_correct)
-    
+
     if db_progress:
         if progress.is_correct:
             db_progress.proficiency_level = min(5, db_progress.proficiency_level + 1)
@@ -129,7 +128,7 @@ async def update_progress(progress: ProgressUpdate, db: Session = Depends(get_db
             next_review=next_review
         )
         db.add(db_progress)
-    
+
     try:
         db.commit()
         return {
@@ -141,38 +140,27 @@ async def update_progress(progress: ProgressUpdate, db: Session = Depends(get_db
         db.rollback()
         raise HTTPException(status_code=500, detail=str(e))
 
-logger = logging.getLogger(__name__)
-
 @router.get("/stats")
-@router.get("/progress-stats")
 async def get_stats(db: Session = Depends(get_db)):
     total_items = db.query(models.Vocabulary).count()
     reviewed_items = db.query(models.UserProgress).count()
     mastered_items = db.query(models.UserProgress).filter(
         models.UserProgress.proficiency_level >= 4
     ).count()
-    
-    logger.debug(f"Total items: {total_items}")
-    logger.debug(f"Reviewed items: {reviewed_items}")
-    logger.debug(f"Mastered items: {mastered_items}")
 
-    proficiency_dist = db.query(
-        models.UserProgress.proficiency_level,
-        func.count(models.UserProgress.id)
-    ).group_by(
-        models.UserProgress.proficiency_level
-    ).all()
-    
-    logger.debug(f"Proficiency distribution: {proficiency_dist}")
+    # Calculate completion rate
+    completion_rate = (reviewed_items / total_items * 100) if total_items > 0 else 0
 
+    # Get current level
+    current_level = get_user_level(db)
+
+    # Calculate streak
     today = datetime.now().date()
     recent_activity = db.query(
         func.date(models.UserProgress.last_reviewed)
     ).distinct().order_by(
         desc(func.date(models.UserProgress.last_reviewed))
     ).all()
-    
-    logger.debug(f"Recent activity: {recent_activity}")
 
     streak = 0
     for i, (date,) in enumerate(recent_activity):
@@ -180,15 +168,12 @@ async def get_stats(db: Session = Depends(get_db)):
             streak += 1
         else:
             break
-    
-    logger.debug(f"Streak: {streak}")
 
     return {
         "total_items": total_items,
         "reviewed_items": reviewed_items,
         "mastered_items": mastered_items,
-        "completion_rate": (reviewed_items / total_items * 100) if total_items > 0 else 0,
-        "current_level": get_user_level(db),
-        "streak": streak,
-        "proficiency_distribution": dict(proficiency_dist)
+        "completion_rate": completion_rate,
+        "current_level": current_level,
+        "streak": streak
     }

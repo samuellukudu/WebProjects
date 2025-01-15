@@ -33,7 +33,11 @@ export const vocabularyAPI = {
 export const practiceAPI = {
   getDailySession: (sessionType = 'standard') => 
     api.get('/practice/daily-session', { params: { session_type: sessionType } }),
-  updateProgress: (data) => api.post('/practice/update-progress', data),
+  updateProgress: (data) => api.post('/practice/update-progress', {
+    vocabulary_id: data.vocabulary_id,
+    proficiency_level: data.proficiency_level,
+    is_correct: data.is_correct
+  }),
   getStats: () => api.get('/practice/stats'),
 };
 

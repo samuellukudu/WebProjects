@@ -1,4 +1,3 @@
-from fastapi import FastAPI
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import OAuth2PasswordBearer
@@ -46,5 +45,3 @@ async def startup_event():
 @app.get("/")
 def root():
     return {"message": "Welcome to Professional Chinese Learning API"}
-    return {"message": "Welcome to Professional Chinese Learning API"}
-

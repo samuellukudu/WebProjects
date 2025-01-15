@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Row, Col, Statistic, Progress as AntProgress } from 'antd';
-import axios from 'axios';
+import { practiceAPI } from '../services/api';
 
 const Progress = () => {
   const [stats, setStats] = useState(null);
@@ -8,7 +8,7 @@ const Progress = () => {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/practice/progress-stats');
+        const response = await practiceAPI.getStats();
         setStats(response.data);
       } catch (error) {
         console.error('Error fetching stats:', error);
@@ -46,12 +46,22 @@ const Progress = () => {
         <Col xs={24} sm={12} md={8}>
           <Card>
             <Statistic
-              title="Review Progress"
-              value={stats.total_items ? Math.round((stats.reviewed_items / stats.total_items) * 100) : 0}
+              title="Mastered Items"
+              value={stats.mastered_items}
+              suffix="words"
+            />
+          </Card>
+        </Col>
+        <Col xs={24}>
+          <Card>
+            <Statistic
+              title="Completion Rate"
+              value={stats.completion_rate}
+              precision={1}
               suffix="%"
             />
             <AntProgress
-              percent={stats.total_items ? Math.round((stats.reviewed_items / stats.total_items) * 100) : 0}
+              percent={stats.completion_rate}
               status="active"
             />
           </Card>

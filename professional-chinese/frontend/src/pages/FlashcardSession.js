@@ -12,14 +12,46 @@ const FlashcardSession = () => {
   const [showAnswer, setShowAnswer] = useState(false);
   const [stats, setStats] = useState(null);
 
+  const loadStats = async () => {
+    try {
+      const response = await practiceAPI.getStats();
+      if (response?.data) {
+        setStats(response.data);
+      }
+    } catch (error) {
+      console.error('Error loading stats:', error);
+      // Don't show error message for stats loading failure
+      // as it's not critical to the main functionality
+    }
+  };
+
   useEffect(() => {
-    loadSession();
+    const initializeSession = async () => {
+      setLoading(true);
+      try {
+        await loadSession();
+        await loadStats();  // Load stats separately
+      } catch (error) {
+        console.error('Error initializing session:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    initializeSession();
   }, []);
 
   const loadSession = async () => {
     setLoading(true);
     try {
       const response = await practiceAPI.getDailySession('flashcard');
+      
+      if (!response.data.vocabulary_items.length) {
+        message.info('No more items available for review. Great job!');
+        setSession(null);
+        return;
+      }
+      
       setSession(response.data);
       setCurrentIndex(0);
       setShowAnswer(false);
@@ -49,8 +81,8 @@ const FlashcardSession = () => {
         setCurrentIndex(prev => prev + 1);
         setShowAnswer(false);
       } else {
-        message.success('Session completed! Loading new session...');
-        loadSession();
+        message.success('Session completed!');
+        await loadSession();
       }
     } catch (error) {
       console.error('Error updating progress:', error);

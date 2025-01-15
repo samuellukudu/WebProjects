@@ -38,9 +38,10 @@ const PracticeSession = () => {
     try {
       await axios.post('http://localhost:8000/api/practice/update-progress', {
         vocabulary_id: session.vocabulary_items[currentIndex].id,
-        proficiency_level: proficiency
+        proficiency_level: proficiency,
+        is_correct: proficiency > 1  // Consider "Got It!" and "Easy!" as correct answers
       }, {
-        timeout: 3000 // 3 second timeout
+        timeout: 3000
       });
       
       setShowAnswer(false);
