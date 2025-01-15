@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List, Optional
+from sqlalchemy import distinct
 from .. import models
 from ..database import get_db
 from pydantic import BaseModel
@@ -58,26 +59,26 @@ async def get_vocabulary_by_id(
     vocabulary_id: int,
     db: Session = Depends(get_db)
 ):
-    vocabulary = db.query(models.Vocabulary).filter(models.Vocabulary.id == vocabulary_id).first()
-    if vocabulary is None:
+    db_vocabulary = db.query(models.Vocabulary).filter(models.Vocabulary.id == vocabulary_id).first()
+    if db_vocabulary is None:
         raise HTTPException(status_code=404, detail="Vocabulary not found")
-    return vocabulary
+    return db_vocabulary
 
-@router.get("/categories/list")
+@router.get("/categories/all", response_model=List[str])
 async def get_categories(
     db: Session = Depends(get_db)
 ):
-    categories = db.query(models.Vocabulary.context_category).distinct().all()
+    categories = db.query(distinct(models.Vocabulary.context_category)).all()
     return [category[0] for category in categories]
 
-@router.get("/search/{query}")
+@router.get("/search/{query}", response_model=List[Vocabulary])
 async def search_vocabulary(
     query: str,
     db: Session = Depends(get_db)
 ):
-    # Search in both Chinese and English
-    results = db.query(models.Vocabulary).filter(
-        (models.Vocabulary.chinese_simplified.ilike(f"%{query}%")) |
-        (models.Vocabulary.english.ilike(f"%{query}%"))
+    search = f"%{query}%"
+    return db.query(models.Vocabulary).filter(
+        models.Vocabulary.chinese_simplified.ilike(search) |
+        models.Vocabulary.pinyin.ilike(search) |
+        models.Vocabulary.english.ilike(search)
     ).all()
-    return results

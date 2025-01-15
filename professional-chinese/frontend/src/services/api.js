@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = 'http://localhost:8000/api';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -26,8 +26,8 @@ api.interceptors.request.use(
 export const vocabularyAPI = {
   getAll: (params) => api.get('/vocabulary/', { params }),
   getById: (id) => api.get(`/vocabulary/${id}`),
-  search: (query) => api.get(`/vocabulary/search?query=${query}`),
-  getCategories: () => api.get('/vocabulary/categories'),
+  search: (query) => api.get(`/vocabulary/search/${query}`),
+  getCategories: () => api.get('/vocabulary/categories/all'),
 };
 
 export const practiceAPI = {

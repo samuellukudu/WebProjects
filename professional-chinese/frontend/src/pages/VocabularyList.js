@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Table, Input, Select, Card, Space } from 'antd';
-import axios from 'axios';
+import { Table, Input, Select, Card, Space, message } from 'antd';
+import { vocabularyAPI } from '../services/api';
 
 const { Search } = Input;
 
@@ -53,13 +53,14 @@ const VocabularyList = () => {
       setLoading(true);
       try {
         const [vocabResponse, categoriesResponse] = await Promise.all([
-          axios.get('http://localhost:8000/vocabulary/'),
-          axios.get('http://localhost:8000/vocabulary/categories')
+          vocabularyAPI.getAll(),
+          vocabularyAPI.getCategories()
         ]);
         setVocabulary(vocabResponse.data);
         setCategories(categoriesResponse.data);
       } catch (error) {
         console.error('Error fetching data:', error);
+        message.error('Failed to load vocabulary data');
       }
       setLoading(false);
     };
@@ -68,18 +69,38 @@ const VocabularyList = () => {
   }, []);
 
   const handleSearch = async (value) => {
+    if (!value.trim()) {
+      const response = await vocabularyAPI.getAll();
+      setVocabulary(response.data);
+      return;
+    }
+    
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:8000/vocabulary/search?query=${value}`);
+      const response = await vocabularyAPI.search(value);
       setVocabulary(response.data);
     } catch (error) {
       console.error('Error searching:', error);
+      message.error('Failed to search vocabulary');
+    }
+    setLoading(false);
+  };
+
+  const handleCategoryChange = async (value) => {
+    setSelectedCategory(value);
+    setLoading(true);
+    try {
+      const response = await vocabularyAPI.getAll({ category: value });
+      setVocabulary(response.data);
+    } catch (error) {
+      console.error('Error filtering by category:', error);
+      message.error('Failed to filter vocabulary');
     }
     setLoading(false);
   };
 
   return (
-    <Card title="Vocabulary List">
+    <Card title="Vocabulary List" className="vocabulary-list">
       <Space style={{ marginBottom: 16 }} size="large">
         <Search
           placeholder="Search vocabulary..."
@@ -92,7 +113,7 @@ const VocabularyList = () => {
           style={{ width: 200 }}
           placeholder="Filter by category"
           allowClear
-          onChange={setSelectedCategory}
+          onChange={handleCategoryChange}
           options={categories.map(cat => ({ label: cat, value: cat }))}
         />
       </Space>
