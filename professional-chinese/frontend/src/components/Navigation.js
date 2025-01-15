@@ -7,7 +7,8 @@ import {
   FormOutlined,
   LineChartOutlined,
   CreditCardOutlined,
-  UserOutlined
+  UserOutlined,
+  AimOutlined
 } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -46,6 +47,16 @@ const Navigation = () => {
       icon: <UserOutlined />,
       label: <Link to="/login">Login</Link>,
       style: { marginTop: 'auto' }
+    },
+    {
+      key: '/personalized',
+      icon: <AimOutlined />,
+      label: <Link to="/personalized">Personal Path</Link>,
+    },
+    {
+      key: '/curriculum',
+      icon: <BookOutlined />,
+      label: <Link to="/curriculum">Create Curriculum</Link>,
     }
   ];
 

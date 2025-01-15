@@ -1,17 +1,25 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 from datetime import datetime, timedelta
 from ..database import get_db
 from .. import models
 import logging
 from sqlalchemy.sql import func
 from sqlalchemy import desc
+import google.generativeai as genai
+from ..config import GEMINI_API_KEY
+import json
+import typing_extensions as typing
 
 router = APIRouter()
 
 logger = logging.getLogger(__name__)
+
+# Initialize Gemini
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 class VocabularyInPractice(BaseModel):
     id: int
@@ -176,4 +184,151 @@ async def get_stats(db: Session = Depends(get_db)):
         "completion_rate": completion_rate,
         "current_level": current_level,
         "streak": streak
+    }
+
+class CurriculumCreate(BaseModel):
+    context: str
+    proficiency: str
+    focus_areas: List[str]
+    time_commitment: int
+
+# Define the schema for curriculum
+class Activity(typing.TypedDict):
+    week: int
+    focus: str
+    activities: list[str]
+    vocabulary_focus: list[str]
+    grammar_points: list[str]
+
+class Curriculum(typing.TypedDict):
+    weekly_plan: list[Activity]
+    learning_objectives: list[str]
+    estimated_duration: str
+
+@router.post("/curriculum")
+async def create_curriculum(
+    curriculum: CurriculumCreate,
+    db: Session = Depends(get_db)
+):
+    try:
+        # Create a more detailed prompt for better curriculum generation
+        prompt = f"""Create a professional Chinese language curriculum tailored to:
+        - Context: {curriculum.context}
+        - Current Proficiency: {curriculum.proficiency}
+        - Focus Areas: {', '.join(curriculum.focus_areas)}
+        - Weekly Time Commitment: {curriculum.time_commitment} hours
+
+        Important requirements:
+        1. Each week should build upon previous weeks
+        2. Include real-world business scenarios
+        3. Focus on practical, workplace communication
+        4. Include cultural context where relevant
+        5. Provide measurable learning objectives
+        6. Include review sections for reinforcement
+
+        The curriculum should match the following JSON structure exactly:
+        {{
+            "weekly_plan": [
+                {{
+                    "week": number,
+                    "focus": "Main topic for the week",
+                    "activities": ["Specific learning activities"],
+                    "vocabulary_focus": ["Key vocabulary with pinyin"],
+                    "grammar_points": ["Grammar concepts"],
+                    "cultural_notes": ["Relevant business culture points"],
+                    "practice_scenarios": ["Real-world practice situations"]
+                }}
+            ],
+            "learning_objectives": ["Measurable objectives"],
+            "estimated_duration": "Timeframe",
+            "recommended_resources": ["Additional learning materials"]
+        }}"""
+
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.GenerationConfig(
+                temperature=0.7,
+                max_output_tokens=2048,
+                response_mime_type="application/json"
+            )
+        )
+
+        curriculum_data = json.loads(response.text)
+        
+        # Store the curriculum in the database
+        db_curriculum = models.Curriculum(
+            user_context=curriculum.context,
+            proficiency_level=curriculum.proficiency,
+            focus_areas=curriculum.focus_areas,
+            content=curriculum_data
+        )
+        db.add(db_curriculum)
+        db.commit()
+        db.refresh(db_curriculum)
+
+        return {"curriculum": curriculum_data, "curriculum_id": db_curriculum.id}
+
+    except Exception as e:
+        logger.error(f"Error creating curriculum: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to create curriculum: {str(e)}"
+        )
+
+class WeeklyLessonCreate(BaseModel):
+    focus: str
+    vocabulary_focus: List[str]
+    grammar_points: List[str]
+
+@router.post("/weekly-lesson", response_model=dict)
+async def create_weekly_lesson(
+    lesson_data: WeeklyLessonCreate,
+    db: Session = Depends(get_db)
+):
+    try:
+        # Create a new lesson record
+        lesson = models.WeeklyLesson(
+            focus=lesson_data.focus,
+            vocabulary_focus=lesson_data.vocabulary_focus,
+            grammar_points=lesson_data.grammar_points,
+            status="not_started"
+        )
+        db.add(lesson)
+        db.commit()
+        db.refresh(lesson)
+        
+        return {
+            "lesson_id": lesson.id,
+            "message": "Weekly lesson created successfully"
+        }
+    except Exception as e:
+        logger.error(f"Error creating weekly lesson: {str(e)}")
+        raise HTTPException(
+            status_code=500,
+            detail=f"Failed to create weekly lesson: {str(e)}"
+        )
+
+@router.get("/weekly-lesson/{lesson_id}")
+async def get_weekly_lesson(
+    lesson_id: int,
+    db: Session = Depends(get_db)
+):
+    lesson = db.query(models.WeeklyLesson).filter(
+        models.WeeklyLesson.id == lesson_id
+    ).first()
+    
+    if not lesson:
+        raise HTTPException(status_code=404, detail="Lesson not found")
+    
+    # Get vocabulary items based on the focus areas
+    vocabulary_items = db.query(models.Vocabulary).filter(
+        models.Vocabulary.context_category.in_(lesson.vocabulary_focus)
+    ).limit(10).all()
+    
+    return {
+        "id": lesson.id,
+        "focus": lesson.focus,
+        "vocabulary_items": vocabulary_items,
+        "grammar_points": lesson.grammar_points,
+        "status": lesson.status
     }

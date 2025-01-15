@@ -7,6 +7,9 @@ import PracticeSession from './pages/PracticeSession';
 import FlashcardSession from './pages/FlashcardSession';
 import Progress from './pages/Progress';
 import Login from './pages/Login';
+import PersonalizedLearning from './pages/PersonalizedLearning';
+import CurriculumBuilder from './pages/CurriculumBuilder';
+import WeeklyLesson from './pages/WeeklyLesson';
 import { Layout } from 'antd';
 
 const { Content } = Layout;
@@ -30,6 +33,9 @@ function App() {
               <Route path="/flashcards" element={<FlashcardSession />} />
               <Route path="/progress" element={<Progress />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/personalized" element={<PersonalizedLearning />} />
+              <Route path="/curriculum" element={<CurriculumBuilder />} />
+              <Route path="/curriculum/week/:lessonId" element={<WeeklyLesson />} />
             </Routes>
           </Content>
         </Layout>

@@ -39,6 +39,12 @@ export const practiceAPI = {
     is_correct: data.is_correct
   }),
   getStats: () => api.get('/practice/stats'),
+  createLearningGoal: (data) => api.post('/practice/goals', data),
+  getNextLesson: () => api.get('/practice/lessons/next'),
+  createCurriculum: (data) => api.post('/practice/curriculum', data),
+  getCurriculumProgress: () => api.get('/practice/curriculum/progress'),
+  startWeeklyLesson: (data) => api.post('/practice/weekly-lesson', data),
+  getWeeklyLesson: (lessonId) => api.get(`/practice/weekly-lesson/${lessonId}`),
 };
 
 export const authAPI = {
