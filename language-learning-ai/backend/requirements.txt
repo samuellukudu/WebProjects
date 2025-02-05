@@ -1,0 +1,9 @@
+FastAPI
+uvicorn
+pydantic
+sqlalchemy
+python-dotenv
+passlib
+ollama
+openai
+pydantic
