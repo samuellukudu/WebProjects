@@ -1,0 +1,24 @@
+{
+  "entity_types": ["ORG", "PERSON"],
+  "contextual_keywords": [
+    "university", "college", "institute", "school", "academy",
+    "research", "phd", "doctorate", "doctoral", "graduate",
+    "postgraduate", "masters", "bachelor", "degree",
+    "program", "programme", "academic", "campus",
+    "department", "center", "centre", "education",
+    "faculty", "laboratory", "foundation"
+  ],
+  "organization_confidence_threshold": 0.5,
+  "academic_domains": [
+    ".edu", ".ac.", "university", "college", "institute",
+    "academy", "school"
+  ],
+  "exclude_domains": [
+    "facebook.com", "twitter.com", "linkedin.com", 
+    "instagram.com", "youtube.com", "tiktok.com"
+  ],
+  "target_organization_types": [
+    "university", "college", "institute", "research_center",
+    "academy", "school", "laboratory", "foundation"
+  ]
+} 

@@ -1,0 +1,84 @@
+2025-07-02 12:43:21,113 - INFO - 🔍 Searching for: 'top universities in Germany for engineering'
+2025-07-02 12:43:23,889 - INFO - response: https://lite.duckduckgo.com/lite/ 200
+2025-07-02 12:43:23,895 - INFO - 📊 Found 5 search results
+2025-07-02 12:43:23,966 - INFO - 🧠 NER Analysis Results:
+2025-07-02 12:43:23,966 - INFO -    📝 Query Entities:
+2025-07-02 12:43:23,966 - INFO -       Universities: 0
+2025-07-02 12:43:23,966 - INFO -       Scholarships: 0
+2025-07-02 12:43:23,966 - INFO -       Programs: 1
+2025-07-02 12:43:23,966 - INFO -       Locations: 1
+2025-07-02 12:43:23,966 - INFO -       Subjects: 1
+2025-07-02 12:43:23,966 - INFO -       Deadlines: 0
+2025-07-02 12:43:23,966 - INFO -    🎯 Primary Intent: university_search (confidence: 2.00)
+2025-07-02 12:43:23,966 - INFO -    📊 Top Relevant Results:
+2025-07-02 12:43:23,966 - INFO -       0.90: https://edurank.org/engineering/de/...
+2025-07-02 12:43:23,966 - INFO -       0.86: https://www.studying-in-germany.org/study-engineering/...
+2025-07-02 12:43:23,966 - INFO -       0.83: https://www.study.eu/article/top-10-best-engineering-univers...
+2025-07-02 12:43:23,966 - INFO -    🔗 Entity Matches Found: 3
+2025-07-02 12:43:23,966 - INFO -    ✅ Filtered results: 5/5 passed relevance filter
+2025-07-02 12:43:25,739 - INFO - 🚫 Disallowed by robots.txt: https://www.mygermanuniversity.com/articles/engineering-universities-in-germany
+2025-07-02 12:43:25,739 - INFO - ✅ Processed https://www.mygermanuniversity.com/articles/engineering-universities-in-germany: 0 organizations, 0 content items
+2025-07-02 12:43:26,950 - INFO - ✅ Processed https://edurank.org/engineering/de/: 1 organizations, 0 content items
+2025-07-02 12:43:27,779 - INFO - ✅ Processed https://www.studying-in-germany.org/study-engineering/: 2 organizations, 19 content items
+2025-07-02 12:43:28,612 - INFO - ✅ Processed https://www.study.eu/article/top-10-best-engineering-universities-in-germany: 2 organizations, 7 content items
+2025-07-02 12:43:52,267 - WARNING - ⚠️ Attempt 1 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2025-07-02 12:44:23,277 - WARNING - ⚠️ Attempt 2 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: HTTPSConnectionPool(host='www.usnews.com', port=443): Max retries exceeded with url: /education/best-global-universities/germany/engineering (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x1090c7680>: Failed to resolve 'www.usnews.com' ([Errno 8] nodename nor servname provided, or not known)"))
+2025-07-02 12:45:15,324 - WARNING - ⚠️ Attempt 3 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 12:45:15,325 - ERROR - ❌ All attempts failed for https://www.usnews.com/education/best-global-universities/germany/engineering
+2025-07-02 12:45:15,325 - INFO - ✅ Processed https://www.usnews.com/education/best-global-universities/germany/engineering: 0 organizations, 0 content items
+2025-07-02 12:45:15,326 - INFO - 🔗 Processing 26 general content items for university lists...
+2025-07-02 12:45:15,326 - INFO - 🔗 Following blog post for universities: Top Engineering Universities in Germany
+2025-07-02 12:45:17,244 - INFO - 📊 Extracted 1 universities from blog: Top Engineering Universities in Germany
+2025-07-02 12:45:17,246 - INFO - 🔗 Following blog post for universities: From Student to Founder: Germany’s Best Universities for Startups
+2025-07-02 12:45:18,936 - INFO - 📊 Extracted 13 universities from blog: From Student to Founder: Germany’s Best Universities for Startups
+2025-07-02 12:45:18,936 - INFO - 🔗 Following blog post for universities: Top 10 Best Universities for Animation in Europe (2025)
+2025-07-02 12:45:21,016 - INFO - 📊 Extracted 1 universities from blog: Top 10 Best Universities for Animation in Europe (2025)
+2025-07-02 12:45:21,016 - INFO - 🔗 Following blog post for universities: Top 10 Best Business Schools for Finance in Europe (2025)
+2025-07-02 12:45:22,834 - INFO - 📊 Extracted 2 universities from blog: Top 10 Best Business Schools for Finance in Europe (2025)
+2025-07-02 12:45:22,834 - INFO - 🔗 Following blog post for universities: Top 10 best universities for Archaeology in Europe (2025)
+2025-07-02 12:45:24,628 - INFO - 📊 Extracted 0 universities from blog: Top 10 best universities for Archaeology in Europe (2025)
+2025-07-02 12:45:24,628 - INFO - 📊 Found 17 additional universities from blog posts!
+2025-07-02 12:45:24,628 - INFO - 📈 Total unique organizations after deduplication: 22
+2025-07-02 12:53:20,688 - INFO - 🔍 Searching for: 'top universities in Germany for engineering'
+2025-07-02 12:53:24,344 - INFO - response: https://html.duckduckgo.com/html 200
+2025-07-02 12:53:24,712 - INFO - 📊 Found 5 search results
+2025-07-02 12:53:24,771 - INFO - 🧠 NER Analysis Results:
+2025-07-02 12:53:24,771 - INFO -    📝 Query Entities:
+2025-07-02 12:53:24,771 - INFO -       Universities: 0
+2025-07-02 12:53:24,771 - INFO -       Scholarships: 0
+2025-07-02 12:53:24,771 - INFO -       Programs: 1
+2025-07-02 12:53:24,771 - INFO -       Locations: 1
+2025-07-02 12:53:24,771 - INFO -       Subjects: 1
+2025-07-02 12:53:24,771 - INFO -       Deadlines: 0
+2025-07-02 12:53:24,771 - INFO -    🎯 Primary Intent: university_search (confidence: 2.00)
+2025-07-02 12:53:24,771 - INFO -    📊 Top Relevant Results:
+2025-07-02 12:53:24,771 - INFO -       0.90: https://edurank.org/engineering/de/...
+2025-07-02 12:53:24,771 - INFO -       0.86: https://www.studying-in-germany.org/study-engineering/...
+2025-07-02 12:53:24,771 - INFO -       0.83: https://www.study.eu/article/top-10-best-engineering-univers...
+2025-07-02 12:53:24,771 - INFO -    🔗 Entity Matches Found: 3
+2025-07-02 12:53:24,771 - INFO -    ✅ Filtered results: 5/5 passed relevance filter
+2025-07-02 12:53:28,112 - INFO - 🚫 Disallowed by robots.txt: https://www.mygermanuniversity.com/articles/engineering-universities-in-germany
+2025-07-02 12:53:28,113 - INFO - ✅ Processed https://www.mygermanuniversity.com/articles/engineering-universities-in-germany: 0 organizations, 0 content items
+2025-07-02 12:53:29,418 - INFO - ✅ Processed https://edurank.org/engineering/de/: 1 organizations, 0 content items
+2025-07-02 12:53:32,399 - INFO - ✅ Processed https://www.studying-in-germany.org/study-engineering/: 2 organizations, 19 content items
+2025-07-02 12:53:32,408 - INFO - ✅ Processed https://www.study.eu/article/top-10-best-engineering-universities-in-germany: 2 organizations, 8 content items
+2025-07-02 12:53:58,658 - WARNING - ⚠️ Attempt 1 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 12:54:30,596 - WARNING - ⚠️ Attempt 2 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 12:55:03,570 - WARNING - ⚠️ Attempt 3 failed for https://www.usnews.com/education/best-global-universities/germany/engineering: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 12:55:03,570 - ERROR - ❌ All attempts failed for https://www.usnews.com/education/best-global-universities/germany/engineering
+2025-07-02 12:55:03,570 - INFO - ✅ Processed https://www.usnews.com/education/best-global-universities/germany/engineering: 0 organizations, 0 content items
+2025-07-02 12:55:03,571 - INFO - 🔗 Processing 27 general content items for university lists...
+2025-07-02 12:55:03,571 - INFO - 🔗 Following blog post for universities: Top Engineering Universities in Germany
+2025-07-02 12:55:05,447 - INFO - 📊 Extracted 1 universities from blog: Top Engineering Universities in Germany
+2025-07-02 12:55:05,449 - INFO - 🔗 Following blog post for universities: From Student to Founder: Germany’s Best Universities for Startups
+2025-07-02 12:55:07,222 - INFO - 📊 Extracted 13 universities from blog: From Student to Founder: Germany’s Best Universities for Startups
+2025-07-02 12:55:07,222 - INFO - 🔗 Following blog post for universities: The 13 best universities in the Baltics - 2025 rankings
+2025-07-02 12:55:09,032 - INFO - 📊 Extracted 0 universities from blog: The 13 best universities in the Baltics - 2025 rankings
+2025-07-02 12:55:09,032 - INFO - 🔗 Following blog post for universities: Top 10 Best Universities for Animation in Europe (2025)
+2025-07-02 12:55:10,781 - INFO - 📊 Extracted 1 universities from blog: Top 10 Best Universities for Animation in Europe (2025)
+2025-07-02 12:55:10,781 - INFO - 🔗 Following blog post for universities: Top 10 Best Business Schools for Finance in Europe (2025)
+2025-07-02 12:55:12,887 - INFO - 📊 Extracted 2 universities from blog: Top 10 Best Business Schools for Finance in Europe (2025)
+2025-07-02 12:55:12,887 - INFO - 🔗 Following blog post for universities: Top 10 best universities for Archaeology in Europe (2025)
+2025-07-02 12:55:14,669 - INFO - 📊 Extracted 0 universities from blog: Top 10 best universities for Archaeology in Europe (2025)
+2025-07-02 12:55:14,669 - INFO - 📊 Found 17 additional universities from blog posts!
+2025-07-02 12:55:14,669 - INFO - 📈 Total unique organizations after deduplication: 22

@@ -1,0 +1,487 @@
+2025-07-02 13:24:31,099 [INFO] root: 🔍 Analyzing query: 'universities in norway'
+2025-07-02 13:24:31,099 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,099 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,099 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,099 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,099 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,099 [INFO] root:    🌍 Target Countries: {'norway'}
+2025-07-02 13:24:31,099 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,099 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,099 [INFO] root:    🎯 Specificity: 0.20
+2025-07-02 13:24:31,099 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,099 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,099 [INFO] root: 🔍 Analyzing query: 'best engineering masters programs in germany'
+2025-07-02 13:24:31,099 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,099 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,099 [INFO] root:    📝 Query Type: comparison_search
+2025-07-02 13:24:31,099 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,099 [INFO] root:    📚 Academic Fields: {'engineering'}
+2025-07-02 13:24:31,099 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:24:31,099 [INFO] root:    🗣️ Language Requirements: {'german'}
+2025-07-02 13:24:31,099 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,099 [INFO] root:    🎯 Specificity: 0.43
+2025-07-02 13:24:31,099 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,099 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,099 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,099 [INFO] root: 🔍 Analyzing query: 'scholarships for international students in canada phd computer science'
+2025-07-02 13:24:31,099 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,099 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,099 [INFO] root:    📝 Query Type: funding_search
+2025-07-02 13:24:31,099 [INFO] root:    🎓 Academic Levels: {'doctoral'}
+2025-07-02 13:24:31,099 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:24:31,099 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,099 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,099 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,099 [INFO] root:    🎯 Specificity: 0.53
+2025-07-02 13:24:31,099 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,099 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,100 [INFO] root:    🔗 Related Terms: ['fellowship', 'tuition assistance', 'grant', 'financial aid']...
+2025-07-02 13:24:31,100 [INFO] root: 🔍 Analyzing query: 'how to apply to medical school in uk requirements'
+2025-07-02 13:24:31,100 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,100 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,100 [INFO] root:    📝 Query Type: admission_info
+2025-07-02 13:24:31,100 [INFO] root:    🎓 Academic Levels: {'professional'}
+2025-07-02 13:24:31,100 [INFO] root:    📚 Academic Fields: {'medicine'}
+2025-07-02 13:24:31,100 [INFO] root:    🌍 Target Countries: {'uk'}
+2025-07-02 13:24:31,100 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,100 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,100 [INFO] root:    🎯 Specificity: 0.47
+2025-07-02 13:24:31,100 [INFO] root:    👤 User Profile: prospective_student
+2025-07-02 13:24:31,100 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,100 [INFO] root:    🔄 Synonyms: ['institute', 'academy', 'college', 'university']...
+2025-07-02 13:24:31,100 [INFO] root: 🔍 Analyzing query: 'top business schools usa vs europe deadline 2025'
+2025-07-02 13:24:31,100 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,100 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,100 [INFO] root:    📝 Query Type: comparison_search
+2025-07-02 13:24:31,100 [INFO] root:    🎓 Academic Levels: {'professional'}
+2025-07-02 13:24:31,100 [INFO] root:    📚 Academic Fields: {'business'}
+2025-07-02 13:24:31,100 [INFO] root:    🌍 Target Countries: {'usa'}
+2025-07-02 13:24:31,100 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,100 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,100 [INFO] root:    🎯 Specificity: 0.37
+2025-07-02 13:24:31,100 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,100 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,100 [INFO] root: 🔍 Analyzing query: 'best colleges for my daughter architecture study abroad'
+2025-07-02 13:24:31,100 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,100 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,100 [INFO] root:    📝 Query Type: comparison_search
+2025-07-02 13:24:31,100 [INFO] root:    🎓 Academic Levels: {'exchange'}
+2025-07-02 13:24:31,100 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,100 [INFO] root:    🌍 Target Countries: set()
+2025-07-02 13:24:31,100 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,100 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,100 [INFO] root:    🎯 Specificity: 0.27
+2025-07-02 13:24:31,100 [INFO] root:    👤 User Profile: parent
+2025-07-02 13:24:31,100 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,100 [INFO] root:    🔗 Related Terms: ['higher education', 'campus', 'academic institution']...
+2025-07-02 13:24:31,100 [INFO] root: 🔍 Analyzing query: 'postdoc research positions artificial intelligence universities'
+2025-07-02 13:24:31,100 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,100 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,100 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,100 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,100 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,100 [INFO] root:    🌍 Target Countries: set()
+2025-07-02 13:24:31,100 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,100 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,100 [INFO] root:    🎯 Specificity: 0.20
+2025-07-02 13:24:31,100 [INFO] root:    👤 User Profile: researcher
+2025-07-02 13:24:31,100 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,100 [INFO] root: 🔍 Analyzing query: 'université en france engineering programs english taught'
+2025-07-02 13:24:31,100 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,100 [INFO] root:    🔤 Language: french
+2025-07-02 13:24:31,100 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,100 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,100 [INFO] root:    📚 Academic Fields: {'engineering', 'computer_science'}
+2025-07-02 13:24:31,100 [INFO] root:    🌍 Target Countries: {'france'}
+2025-07-02 13:24:31,100 [INFO] root:    🗣️ Language Requirements: {'english'}
+2025-07-02 13:24:31,101 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,101 [INFO] root:    🎯 Specificity: 0.40
+2025-07-02 13:24:31,101 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,101 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,101 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,101 [INFO] root: 🔍 Analyzing query: 'online master degree computer science accredited universities'
+2025-07-02 13:24:31,101 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,101 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,101 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,101 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,101 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:24:31,101 [INFO] root:    🌍 Target Countries: set()
+2025-07-02 13:24:31,101 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,101 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,101 [INFO] root:    🎯 Specificity: 0.30
+2025-07-02 13:24:31,101 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,101 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,101 [INFO] root: 🔍 Analyzing query: 'spring 2025 admission deadlines psychology programs'
+2025-07-02 13:24:31,101 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,101 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,101 [INFO] root:    📝 Query Type: admission_info
+2025-07-02 13:24:31,101 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,101 [INFO] root:    📚 Academic Fields: {'social_sciences'}
+2025-07-02 13:24:31,101 [INFO] root:    🌍 Target Countries: set()
+2025-07-02 13:24:31,101 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,101 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,101 [INFO] root:    🎯 Specificity: 0.27
+2025-07-02 13:24:31,101 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,101 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,101 [INFO] root:    🔄 Synonyms: ['entry', 'acceptance', 'enrollment', 'application']...
+2025-07-02 13:24:31,101 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,101 [INFO] root: 🔍 Analyzing query: 'computer science phd programs in germany'
+2025-07-02 13:24:31,101 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,101 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,101 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,101 [INFO] root:    🎓 Academic Levels: {'graduate', 'doctoral'}
+2025-07-02 13:24:31,101 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:24:31,101 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:24:31,101 [INFO] root:    🗣️ Language Requirements: {'german'}
+2025-07-02 13:24:31,101 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,101 [INFO] root:    🎯 Specificity: 0.43
+2025-07-02 13:24:31,101 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,101 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,101 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,102 [INFO] root: 🏆 Top Ranked Results:
+2025-07-02 13:24:31,102 [INFO] root:    1. Score: 0.319 | https://www.daad.de/en/study-and-research-in-germa...
+2025-07-02 13:24:31,102 [INFO] root:       Reasons: Geographic match (1.00)
+2025-07-02 13:24:31,102 [INFO] root:    2. Score: 0.283 | https://www.tum.de/en/studies/degree-programs/doct...
+2025-07-02 13:24:31,102 [INFO] root:       Reasons: Geographic match (0.80)
+2025-07-02 13:24:31,102 [INFO] root:    3. Score: 0.273 | https://www.mpg.de/phd-programs...
+2025-07-02 13:24:31,102 [INFO] root:       Reasons: Geographic match (1.00)
+2025-07-02 13:24:31,102 [INFO] root:    4. Score: 0.249 | https://www.studyabroad.com/germany-universities-g...
+2025-07-02 13:24:31,102 [INFO] root:       Reasons: Geographic match (0.70)
+2025-07-02 13:24:31,102 [INFO] root:    5. Score: 0.183 | https://top10universities.com/best-phd-germany-eve...
+2025-07-02 13:24:31,102 [INFO] root:       Reasons: Geographic match (0.70)
+2025-07-02 13:24:31,102 [INFO] root: 🔍 Analyzing query: 'I want to apply to universities in canada'
+2025-07-02 13:24:31,102 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,102 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,102 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,102 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,102 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,102 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,102 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,102 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,102 [INFO] root:    🎯 Specificity: 0.37
+2025-07-02 13:24:31,102 [INFO] root:    👤 User Profile: prospective_student
+2025-07-02 13:24:31,102 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,102 [INFO] root: 🔍 Analyzing query: 'best universities in canada for my daughter'
+2025-07-02 13:24:31,102 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,102 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,102 [INFO] root:    📝 Query Type: comparison_search
+2025-07-02 13:24:31,102 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,102 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,102 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,102 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,102 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,102 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:24:31,102 [INFO] root:    👤 User Profile: parent
+2025-07-02 13:24:31,102 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,102 [INFO] root: 🔍 Analyzing query: 'research universities in canada for faculty positions'
+2025-07-02 13:24:31,102 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,102 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,102 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,102 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,102 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,102 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,102 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,102 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,102 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:24:31,102 [INFO] root:    👤 User Profile: researcher
+2025-07-02 13:24:31,102 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,102 [INFO] root: 🔍 Analyzing query: 'transfer to universities in canada from us'
+2025-07-02 13:24:31,102 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,102 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,102 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,102 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,102 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,102 [INFO] root:    🌍 Target Countries: {'usa', 'canada'}
+2025-07-02 13:24:31,102 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,102 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,102 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:24:31,102 [INFO] root:    👤 User Profile: current_student
+2025-07-02 13:24:31,102 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,102 [INFO] root: 🔍 Analyzing query: 'what are universities in canada like'
+2025-07-02 13:24:31,103 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,103 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,103 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,103 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,103 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,103 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,103 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,103 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,103 [INFO] root:    🎯 Specificity: 0.30
+2025-07-02 13:24:31,103 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,103 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,103 [INFO] root: 🔍 Analyzing query: 'specific computer science doctoral programs universities canada'
+2025-07-02 13:24:31,103 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,103 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,103 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,103 [INFO] root:    🎓 Academic Levels: {'graduate', 'doctoral'}
+2025-07-02 13:24:31,103 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:24:31,103 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:24:31,103 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,103 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,103 [INFO] root:    🎯 Specificity: 0.40
+2025-07-02 13:24:31,103 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,103 [INFO] root:    📊 Experience Level: advanced
+2025-07-02 13:24:31,103 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,103 [INFO] root: 🔍 Analyzing query: 'universities in germany'
+2025-07-02 13:24:31,103 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,103 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,103 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,103 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,103 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,103 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:24:31,103 [INFO] root:    🗣️ Language Requirements: {'german'}
+2025-07-02 13:24:31,103 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,103 [INFO] root:    🎯 Specificity: 0.20
+2025-07-02 13:24:31,103 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,103 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,103 [INFO] root: 🔍 Analyzing query: 'université en france engineering programs'
+2025-07-02 13:24:31,103 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,103 [INFO] root:    🔤 Language: french
+2025-07-02 13:24:31,103 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,103 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,103 [INFO] root:    📚 Academic Fields: {'engineering', 'computer_science'}
+2025-07-02 13:24:31,103 [INFO] root:    🌍 Target Countries: {'france'}
+2025-07-02 13:24:31,103 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,103 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,103 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:24:31,103 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,103 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,103 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,103 [INFO] root: 🔍 Analyzing query: 'universität deutschland studium computer science'
+2025-07-02 13:24:31,103 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,103 [INFO] root:    🔤 Language: german
+2025-07-02 13:24:31,103 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,103 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,103 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:24:31,104 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:24:31,104 [INFO] root:    🗣️ Language Requirements: {'german'}
+2025-07-02 13:24:31,104 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,104 [INFO] root:    🎯 Specificity: 0.27
+2025-07-02 13:24:31,104 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,104 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,104 [INFO] root: 🔍 Analyzing query: 'universidad en españa medicina'
+2025-07-02 13:24:31,104 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,104 [INFO] root:    🔤 Language: spanish
+2025-07-02 13:24:31,104 [INFO] root:    📝 Query Type: general_search
+2025-07-02 13:24:31,104 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,104 [INFO] root:    📚 Academic Fields: set()
+2025-07-02 13:24:31,104 [INFO] root:    🌍 Target Countries: set()
+2025-07-02 13:24:31,104 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,104 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,104 [INFO] root:    🎯 Specificity: 0.13
+2025-07-02 13:24:31,104 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,104 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,104 [INFO] root: 🔍 Analyzing query: 'université germany english taught programs'
+2025-07-02 13:24:31,104 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,104 [INFO] root:    🔤 Language: french
+2025-07-02 13:24:31,104 [INFO] root:    📝 Query Type: program_search
+2025-07-02 13:24:31,104 [INFO] root:    🎓 Academic Levels: {'graduate'}
+2025-07-02 13:24:31,104 [INFO] root:    📚 Academic Fields: {'computer_science'}
+2025-07-02 13:24:31,104 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:24:31,104 [INFO] root:    🗣️ Language Requirements: {'english', 'german'}
+2025-07-02 13:24:31,104 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,104 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:24:31,104 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,104 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,104 [INFO] root:    🔗 Related Terms: ['degree', 'major', 'curriculum', 'course of study']...
+2025-07-02 13:24:31,104 [INFO] root: 🔍 Searching for: 'scholarships for engineering students in norway'
+2025-07-02 13:24:31,104 [INFO] root: 🔍 Analyzing query: 'scholarships for engineering students in norway'
+2025-07-02 13:24:31,105 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:24:31,105 [INFO] root:    🔤 Language: english
+2025-07-02 13:24:31,105 [INFO] root:    📝 Query Type: funding_search
+2025-07-02 13:24:31,105 [INFO] root:    🎓 Academic Levels: set()
+2025-07-02 13:24:31,105 [INFO] root:    📚 Academic Fields: {'engineering'}
+2025-07-02 13:24:31,105 [INFO] root:    🌍 Target Countries: {'norway'}
+2025-07-02 13:24:31,105 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:24:31,105 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:24:31,105 [INFO] root:    🎯 Specificity: 0.37
+2025-07-02 13:24:31,105 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:24:31,105 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:24:31,105 [INFO] root:    🔗 Related Terms: ['fellowship', 'tuition assistance', 'grant', 'financial aid']...
+2025-07-02 13:24:31,112 [INFO] root: 🔍 Searching attempt 1: 'scholarships for engineering students in norway' (max_results=5)
+2025-07-02 13:24:34,035 [INFO] primp: response: https://lite.duckduckgo.com/lite/ 200
+2025-07-02 13:24:34,039 [INFO] root: 📊 Found 5 search results in 2.9s
+2025-07-02 13:24:34,105 [INFO] root: 🏆 Top Ranked Results:
+2025-07-02 13:24:34,105 [INFO] root:    1. Score: 0.485 | https://scholarshiproar.com/scholarships-in-norway...
+2025-07-02 13:24:34,105 [INFO] root:       Reasons: High NER relevance (1.00), Geographic match (0.70)
+2025-07-02 13:24:34,105 [INFO] root:    2. Score: 0.452 | https://globalscholarships.com/best-scholarships-n...
+2025-07-02 13:24:34,105 [INFO] root:       Reasons: High NER relevance (1.00), Geographic match (0.70)
+2025-07-02 13:24:34,105 [INFO] root:    3. Score: 0.400 | https://www.mastersportal.com/search/scholarships/...
+2025-07-02 13:24:34,105 [INFO] root:       Reasons: High NER relevance (0.58), Geographic match (0.70)
+2025-07-02 13:24:34,105 [INFO] root:    4. Score: 0.390 | https://koicascholarship.org/norway-international-...
+2025-07-02 13:24:34,105 [INFO] root:       Reasons: Geographic match (0.70), Temporally relevant (0.70)
+2025-07-02 13:24:34,105 [INFO] root:    5. Score: 0.339 | https://bestfullyfundedscholarships.com/25-fully-f...
+2025-07-02 13:24:34,105 [INFO] root:       Reasons: Geographic match (0.70), Temporally relevant (0.70)
+2025-07-02 13:24:34,106 [INFO] root: 🎯 Recognition-enhanced filtering: 5/5 results passed quality threshold
+2025-07-02 13:24:34,106 [INFO] root: 🧠 Advanced Recognition Insights:
+2025-07-02 13:24:34,106 [INFO] root:    📝 Query Analysis:
+2025-07-02 13:24:34,106 [INFO] root:       Language: english
+2025-07-02 13:24:34,106 [INFO] root:       Type: funding_search
+2025-07-02 13:24:34,106 [INFO] root:       Specificity: 0.37
+2025-07-02 13:24:34,106 [INFO] root:       User Profile: unknown
+2025-07-02 13:24:34,106 [INFO] root:       Academic Fields: engineering
+2025-07-02 13:24:34,106 [INFO] root:       Target Countries: norway
+2025-07-02 13:24:34,106 [INFO] root:    🔍 Entity Extraction:
+2025-07-02 13:24:34,106 [INFO] root:       Universities: 0
+2025-07-02 13:24:34,106 [INFO] root:       Programs: 1
+2025-07-02 13:24:34,106 [INFO] root:       Locations: 1
+2025-07-02 13:24:34,106 [INFO] root:       Intent: scholarship_search
+2025-07-02 13:24:34,106 [INFO] root:    🏆 Top Recognition Results:
+2025-07-02 13:24:34,106 [INFO] root:       1. Score: 0.485 | https://scholarshiproar.com/scholarships-in-norway/...
+2025-07-02 13:24:34,106 [INFO] root:          Reasons: High NER relevance (1.00), Geographic match (0.70)
+2025-07-02 13:24:34,106 [INFO] root:       2. Score: 0.452 | https://globalscholarships.com/best-scholarships-norway/...
+2025-07-02 13:24:34,106 [INFO] root:          Reasons: High NER relevance (1.00), Geographic match (0.70)
+2025-07-02 13:24:34,106 [INFO] root:       3. Score: 0.400 | https://www.mastersportal.com/search/scholarships/master/nor...
+2025-07-02 13:24:34,106 [INFO] root:          Reasons: High NER relevance (0.58), Geographic match (0.70)
+2025-07-02 13:24:34,106 [INFO] root:    🔄 Query Expansion: fellowship, tuition assistance, grant
+2025-07-02 13:24:34,106 [INFO] root:    ✅ Filtered results: 5/5 passed relevance filter
+2025-07-02 13:24:35,888 [INFO] root: 🚫 Disallowed by robots.txt: https://globalscholarships.com/best-scholarships-norway/
+2025-07-02 13:24:35,888 [INFO] root: 🚫 Disallowed by robots.txt: https://www.mastersportal.com/search/scholarships/master/norway/engineering-technology
+2025-07-02 13:24:35,888 [INFO] root: ✅ Processed https://globalscholarships.com/best-scholarships-norway/: 0 organizations, 0 content items
+2025-07-02 13:24:35,888 [INFO] root: ✅ Processed https://www.mastersportal.com/search/scholarships/master/norway/engineering-technology: 0 organizations, 0 content items
+2025-07-02 13:24:35,931 [INFO] root: 🚫 Disallowed by robots.txt: https://scholarshiproar.com/scholarships-in-norway/
+2025-07-02 13:24:35,931 [INFO] root: ✅ Processed https://scholarshiproar.com/scholarships-in-norway/: 0 organizations, 0 content items
+2025-07-02 13:24:35,935 [INFO] root: 🚫 Disallowed by robots.txt: https://bestfullyfundedscholarships.com/25-fully-funded-scholarships-in-norway/
+2025-07-02 13:24:35,935 [INFO] root: ✅ Processed https://bestfullyfundedscholarships.com/25-fully-funded-scholarships-in-norway/: 0 organizations, 0 content items
+2025-07-02 13:24:38,388 [INFO] root: ✅ Processed https://koicascholarship.org/norway-international-scholarships-undergraduate-masters-phd/: 0 organizations, 5 content items
+2025-07-02 13:24:38,388 [INFO] root: 🔗 Processing 5 general content items for university lists...
+2025-07-02 13:24:38,388 [INFO] root: 📈 Total unique organizations after deduplication: 0
+2025-07-02 13:25:08,393 [INFO] root: 🔍 Searching for: 'best universities computer science phd germany'
+2025-07-02 13:25:08,393 [INFO] root: 🔍 Analyzing query: 'best universities computer science phd germany'
+2025-07-02 13:25:08,394 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:25:08,394 [INFO] root:    🔤 Language: english
+2025-07-02 13:25:08,394 [INFO] root:    📝 Query Type: comparison_search
+2025-07-02 13:25:08,394 [INFO] root:    🎓 Academic Levels: {'graduate', 'doctoral'}
+2025-07-02 13:25:08,394 [INFO] root:    📚 Academic Fields: {'computer_science', 'sciences'}
+2025-07-02 13:25:08,394 [INFO] root:    🌍 Target Countries: {'germany'}
+2025-07-02 13:25:08,394 [INFO] root:    🗣️ Language Requirements: {'german'}
+2025-07-02 13:25:08,394 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:25:08,394 [INFO] root:    🎯 Specificity: 0.37
+2025-07-02 13:25:08,395 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:25:08,395 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:25:08,406 [INFO] root: 🔍 Searching attempt 1: 'best universities computer science phd germany' (max_results=5)
+2025-07-02 13:25:10,451 [INFO] primp: response: https://html.duckduckgo.com/html 200
+2025-07-02 13:25:10,797 [INFO] root: 📊 Found 5 search results in 2.4s
+2025-07-02 13:25:10,870 [INFO] root: 🏆 Top Ranked Results:
+2025-07-02 13:25:10,870 [INFO] root:    1. Score: 0.474 | https://edurank.org/cs/de/...
+2025-07-02 13:25:10,870 [INFO] root:       Reasons: High NER relevance (0.93), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:    2. Score: 0.450 | https://www.studyworldly.com/top-10-universities-g...
+2025-07-02 13:25:10,870 [INFO] root:       Reasons: High NER relevance (0.83), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:    3. Score: 0.424 | https://www.usnews.com/education/best-global-unive...
+2025-07-02 13:25:10,870 [INFO] root:       Reasons: High NER relevance (0.83), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:    4. Score: 0.404 | https://www.phdportal.com/search/phd/ph-d/computer...
+2025-07-02 13:25:10,870 [INFO] root:       Reasons: High NER relevance (0.79), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:    5. Score: 0.395 | https://www.findamasters.com/guides/best-computer-...
+2025-07-02 13:25:10,870 [INFO] root:       Reasons: High NER relevance (0.65), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root: 🎯 Recognition-enhanced filtering: 5/5 results passed quality threshold
+2025-07-02 13:25:10,870 [INFO] root: 🧠 Advanced Recognition Insights:
+2025-07-02 13:25:10,870 [INFO] root:    📝 Query Analysis:
+2025-07-02 13:25:10,870 [INFO] root:       Language: english
+2025-07-02 13:25:10,870 [INFO] root:       Type: comparison_search
+2025-07-02 13:25:10,870 [INFO] root:       Specificity: 0.37
+2025-07-02 13:25:10,870 [INFO] root:       User Profile: unknown
+2025-07-02 13:25:10,870 [INFO] root:       Academic Levels: graduate, doctoral
+2025-07-02 13:25:10,870 [INFO] root:       Academic Fields: computer_science, sciences
+2025-07-02 13:25:10,870 [INFO] root:       Target Countries: germany
+2025-07-02 13:25:10,870 [INFO] root:    🔍 Entity Extraction:
+2025-07-02 13:25:10,870 [INFO] root:       Universities: 0
+2025-07-02 13:25:10,870 [INFO] root:       Programs: 2
+2025-07-02 13:25:10,870 [INFO] root:       Locations: 1
+2025-07-02 13:25:10,870 [INFO] root:       Intent: program_search
+2025-07-02 13:25:10,870 [INFO] root:    🏆 Top Recognition Results:
+2025-07-02 13:25:10,870 [INFO] root:       1. Score: 0.474 | https://edurank.org/cs/de/...
+2025-07-02 13:25:10,870 [INFO] root:          Reasons: High NER relevance (0.93), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:       2. Score: 0.450 | https://www.studyworldly.com/top-10-universities-germany-com...
+2025-07-02 13:25:10,870 [INFO] root:          Reasons: High NER relevance (0.83), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:       3. Score: 0.424 | https://www.usnews.com/education/best-global-universities/ge...
+2025-07-02 13:25:10,870 [INFO] root:          Reasons: High NER relevance (0.83), Geographic match (0.70)
+2025-07-02 13:25:10,870 [INFO] root:    ✅ Filtered results: 5/5 passed relevance filter
+2025-07-02 13:25:12,518 [INFO] root: 🚫 Disallowed by robots.txt: https://www.phdportal.com/search/phd/ph-d/computer-science-it/germany
+2025-07-02 13:25:12,519 [INFO] root: ✅ Processed https://www.phdportal.com/search/phd/ph-d/computer-science-it/germany: 0 organizations, 0 content items
+2025-07-02 13:25:12,533 [INFO] root: 🚫 Disallowed by robots.txt: https://www.findamasters.com/guides/best-computer-science-universities-germany
+2025-07-02 13:25:12,533 [INFO] root: ✅ Processed https://www.findamasters.com/guides/best-computer-science-universities-germany: 0 organizations, 0 content items
+2025-07-02 13:25:13,761 [INFO] root: ✅ Processed https://edurank.org/cs/de/: 2 organizations, 0 content items
+2025-07-02 13:25:15,904 [INFO] root: ✅ Processed https://www.studyworldly.com/top-10-universities-germany-computer-science-2025: 2 organizations, 12 content items
+2025-07-02 13:25:42,683 [WARNING] root: ⚠️ Attempt 1 failed for https://www.usnews.com/education/best-global-universities/germany/computer-science: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 13:26:14,488 [WARNING] root: ⚠️ Attempt 2 failed for https://www.usnews.com/education/best-global-universities/germany/computer-science: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 13:26:47,410 [WARNING] root: ⚠️ Attempt 3 failed for https://www.usnews.com/education/best-global-universities/germany/computer-science: HTTPSConnectionPool(host='www.usnews.com', port=443): Read timed out. (read timeout=30)
+2025-07-02 13:26:47,412 [ERROR] root: ❌ All attempts failed for https://www.usnews.com/education/best-global-universities/germany/computer-science
+2025-07-02 13:26:47,412 [INFO] root: ✅ Processed https://www.usnews.com/education/best-global-universities/germany/computer-science: 0 organizations, 0 content items
+2025-07-02 13:26:47,412 [INFO] root: 🔗 Processing 12 general content items for university lists...
+2025-07-02 13:26:47,418 [INFO] root: 🔗 Following blog post for universities: Top 10 Universities in Germany for Computer Science in 2025: Your Ultimate Study Guide
+2025-07-02 13:26:49,973 [INFO] root: 📊 Extracted 0 universities from blog: Top 10 Universities in Germany for Computer Science in 2025: Your Ultimate Study Guide
+2025-07-02 13:26:49,973 [INFO] root: 🔗 Following blog post for universities: Top 10 Universities for Computer Science in Germany 2025
+2025-07-02 13:26:52,373 [INFO] root: 📊 Extracted 0 universities from blog: Top 10 Universities for Computer Science in Germany 2025
+2025-07-02 13:26:52,373 [INFO] root: 🔗 Following blog post for universities: Top 10 Universities in France for Computer Science in 2025: Your Ultimate Study Guide— inCountry Guides
+2025-07-02 13:26:54,449 [INFO] root: 📊 Extracted 0 universities from blog: Top 10 Universities in France for Computer Science in 2025: Your Ultimate Study Guide— inCountry Guides
+2025-07-02 13:26:54,449 [INFO] root: 🔗 Following blog post for universities: Top 10 US Universities for Computer Science in 2025— inCountry Guides
+2025-07-02 13:26:58,077 [INFO] root: 📊 Extracted 0 universities from blog: Top 10 US Universities for Computer Science in 2025— inCountry Guides
+2025-07-02 13:26:58,077 [INFO] root: 🔗 Following blog post for universities: Top 10 Universities in Austria for Computer Science in 2025: Your Ultimate Study Guide— inCountry Guides
+2025-07-02 13:27:00,530 [INFO] root: 📊 Extracted 1 universities from blog: Top 10 Universities in Austria for Computer Science in 2025: Your Ultimate Study Guide— inCountry Guides
+2025-07-02 13:27:00,530 [INFO] root: 🔗 Following blog post for universities: Top 10 UK Universities for Computer Science in 2025: Your Ultimate List— inCountry Guides
+2025-07-02 13:27:03,004 [INFO] root: 📊 Extracted 10 universities from blog: Top 10 UK Universities for Computer Science in 2025: Your Ultimate List— inCountry Guides
+2025-07-02 13:27:03,004 [INFO] root: 📊 Found 11 additional universities from blog posts!
+2025-07-02 13:27:03,004 [INFO] root: 📈 Total unique organizations after deduplication: 14
+2025-07-02 13:27:33,008 [INFO] root: 🔍 Searching for: 'medical school admission requirements canada'
+2025-07-02 13:27:33,009 [INFO] root: 🔍 Analyzing query: 'medical school admission requirements canada'
+2025-07-02 13:27:33,009 [INFO] root: 🧠 Advanced Query Analysis Results:
+2025-07-02 13:27:33,009 [INFO] root:    🔤 Language: english
+2025-07-02 13:27:33,010 [INFO] root:    📝 Query Type: admission_info
+2025-07-02 13:27:33,010 [INFO] root:    🎓 Academic Levels: {'professional'}
+2025-07-02 13:27:33,010 [INFO] root:    📚 Academic Fields: {'medicine'}
+2025-07-02 13:27:33,010 [INFO] root:    🌍 Target Countries: {'canada'}
+2025-07-02 13:27:33,010 [INFO] root:    🗣️ Language Requirements: set()
+2025-07-02 13:27:33,010 [INFO] root:    ⏰ Deadline Urgency: flexible
+2025-07-02 13:27:33,010 [INFO] root:    🎯 Specificity: 0.33
+2025-07-02 13:27:33,010 [INFO] root:    👤 User Profile: unknown
+2025-07-02 13:27:33,010 [INFO] root:    📊 Experience Level: intermediate
+2025-07-02 13:27:33,010 [INFO] root:    🔄 Synonyms: ['institute', 'entry', 'academy', 'acceptance', 'enrollment']...
+2025-07-02 13:27:33,020 [INFO] root: 🔍 Searching attempt 1: 'medical school admission requirements canada' (max_results=5)
+2025-07-02 13:27:35,685 [INFO] primp: response: https://lite.duckduckgo.com/lite/ 200
+2025-07-02 13:27:35,688 [INFO] root: 📊 Found 5 search results in 2.7s
+2025-07-02 13:27:35,756 [INFO] root: 🏆 Top Ranked Results:
+2025-07-02 13:27:35,756 [INFO] root:    1. Score: 0.426 | https://www.shemmassianconsulting.com/blog/medical...
+2025-07-02 13:27:35,756 [INFO] root:       Reasons: High NER relevance (0.70), Geographic match (0.70)
+2025-07-02 13:27:35,756 [INFO] root:    2. Score: 0.367 | https://masterstudent.ca/requirements-for-medical-...
+2025-07-02 13:27:35,756 [INFO] root:       Reasons: Geographic match (1.00)
+2025-07-02 13:27:35,756 [INFO] root:    3. Score: 0.311 | https://applymd.utoronto.ca/academic-requirements...
+2025-07-02 13:27:35,756 [INFO] root:       Reasons: Geographic match (1.00)
+2025-07-02 13:27:35,756 [INFO] root:    4. Score: 0.288 | https://www.mcgill.ca/medadmissions/applying/requi...
+2025-07-02 13:27:35,756 [INFO] root:       Reasons: Geographic match (0.80)
+2025-07-02 13:27:35,756 [INFO] root:    5. Score: 0.286 | https://www.ouac.on.ca/guide/omsas-program-require...
+2025-07-02 13:27:35,756 [INFO] root:       Reasons: Geographic match (0.80)
+2025-07-02 13:27:35,756 [INFO] root: 🎯 Recognition-enhanced filtering: 5/5 results passed quality threshold
+2025-07-02 13:27:35,756 [INFO] root: 🧠 Advanced Recognition Insights:
+2025-07-02 13:27:35,756 [INFO] root:    📝 Query Analysis:
+2025-07-02 13:27:35,756 [INFO] root:       Language: english
+2025-07-02 13:27:35,756 [INFO] root:       Type: admission_info
+2025-07-02 13:27:35,756 [INFO] root:       Specificity: 0.33
+2025-07-02 13:27:35,756 [INFO] root:       User Profile: unknown
+2025-07-02 13:27:35,756 [INFO] root:       Academic Levels: professional
+2025-07-02 13:27:35,756 [INFO] root:       Academic Fields: medicine
+2025-07-02 13:27:35,756 [INFO] root:       Target Countries: canada
+2025-07-02 13:27:35,756 [INFO] root:    🔍 Entity Extraction:
+2025-07-02 13:27:35,756 [INFO] root:       Universities: 1
+2025-07-02 13:27:35,756 [INFO] root:       Programs: 0
+2025-07-02 13:27:35,756 [INFO] root:       Locations: 1
+2025-07-02 13:27:35,756 [INFO] root:       Intent: university_search
+2025-07-02 13:27:35,756 [INFO] root:    🏆 Top Recognition Results:
+2025-07-02 13:27:35,756 [INFO] root:       1. Score: 0.426 | https://www.shemmassianconsulting.com/blog/medical-schools-i...
+2025-07-02 13:27:35,756 [INFO] root:          Reasons: High NER relevance (0.70), Geographic match (0.70)
+2025-07-02 13:27:35,756 [INFO] root:       2. Score: 0.367 | https://masterstudent.ca/requirements-for-medical-schools-in...
+2025-07-02 13:27:35,756 [INFO] root:          Reasons: Geographic match (1.00)
+2025-07-02 13:27:35,756 [INFO] root:       3. Score: 0.311 | https://applymd.utoronto.ca/academic-requirements...
+2025-07-02 13:27:35,756 [INFO] root:          Reasons: Geographic match (1.00)
+2025-07-02 13:27:35,756 [INFO] root:    🔄 Query Expansion: institute, entry, academy
+2025-07-02 13:27:35,756 [INFO] root:    ✅ Filtered results: 4/5 passed relevance filter
+2025-07-02 13:27:38,701 [INFO] root: ✅ Processed https://applymd.utoronto.ca/academic-requirements: 3 organizations, 23 content items
+2025-07-02 13:27:39,013 [INFO] root: ✅ Processed https://masterstudent.ca/requirements-for-medical-schools-in-canada/: 12 organizations, 7 content items
+2025-07-02 13:27:39,294 [INFO] root: ✅ Processed https://www.ouac.on.ca/guide/omsas-program-requirements/: 4 organizations, 25 content items
+2025-07-02 13:27:40,039 [INFO] root: ✅ Processed https://www.shemmassianconsulting.com/blog/medical-schools-in-canada: 14 organizations, 26 content items
+2025-07-02 13:27:40,040 [INFO] root: 🔗 Processing 81 general content items for university lists...
+2025-07-02 13:27:40,040 [INFO] root: 🔗 Following blog post for universities: Best Universities for Medicine 2024
+2025-07-02 13:27:44,342 [INFO] root: 📊 Extracted 6 universities from blog: Best Universities for Medicine 2024
+2025-07-02 13:27:44,342 [INFO] root: 🔗 Following blog post for universities: Canada’s Top Medical/Doctoral Schools 2024
+2025-07-02 13:27:46,231 [INFO] root: 🚫 Disallowed by robots.txt: https://education.macleans.ca/feature/canadas-best-medical-doctoral-universities-rankings-2024/
+2025-07-02 13:27:46,231 [INFO] root: 📊 Found 6 additional universities from blog posts!
+2025-07-02 13:27:46,232 [INFO] root: 📈 Total unique organizations after deduplication: 39
